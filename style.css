@@ -14,6 +14,7 @@ body{
 .contact-title h1{
 	font-size: 32px;
 	line-height: 10px;
+	text-decoration-color: red;
 }
 
 .contact-title h2{
