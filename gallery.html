@@ -1,116 +1,116 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="custom.css">
-	<link rel="stylesheet" type="text/css" href="demo.css">
-	<link rel="stylesheet" type="text/css" href="slicebox.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>My Work</title>
-	<script src="modernizr.custom.46884.js"></script>
-</head>
-<body>
-	<nav>
-		<a href="index.html">Home</a>
-	</nav>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="custom.css">
+		<link rel="stylesheet" type="text/css" href="demo.css">
+		<link rel="stylesheet" type="text/css" href="slicebox.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>My Work</title>
+		<script src="js/modernizr.custom.46884.js"></script>
+	</head>
+	<body>
+		<nav>
+			<a href="index.html">Home</a>
+		</nav>
 
-	<h3>Art</h3>
-	<div class="container">
-		<div class="wrapper">
-			<ul id="sb-slider" class="sb-slider">
-				<li>
-					<a href=""><img src="images/flower.jpg" alt="flower"></a>
-				</li>
-				<li>
-					<a href=""><img src="images/city.jpg" alt="city" ></a>
-				</li>
-				<li>
-					<a href=""><img src="images/space.jpg" alt="space"></a>
-				</li>
-				<li>
-					<a href=""><img src="images/slime.jpg" alt="slime"></a>
-				</li>
-				<li>
-					<a href=""><img src="images/heart.jpg" alt="heart"></a>
-				</li>
-				<li>
-					<a href=""><img src="images/hallway.jpg" alt="hall"></a>
-				</li>
-				<li>
-					<a href=""><img src="images/orb.png" alt="orb"></a>
-				</li>
-			</ul>
-			<div id="shadow" class="shadow"></div>
-			<div id="nav-arrows" class="nav-arrows"></div>
-			<a href="">Next</a>
-			<a href="">Previous</a>
+		<h3>Art</h3>
+		<div class="container">
+			<div class="wrapper">
+				<ul id="sb-slider" class="sb-slider">
+					<li>
+						<a href=""><img src="images/flower.jpg" alt="flower"></a>
+					</li>
+					<li>
+						<a href=""><img src="images/city.jpg" alt="city" ></a>
+					</li>
+					<li>
+						<a href=""><img src="images/space.jpg" alt="space"></a>
+					</li>
+					<li>
+						<a href=""><img src="images/slime.jpg" alt="slime"></a>
+					</li>
+					<li>
+						<a href=""><img src="images/heart.jpg" alt="heart"></a>
+					</li>
+					<li>
+						<a href=""><img src="images/hallway.jpg" alt="hall"></a>
+					</li>
+					<li>
+						<a href=""><img src="images/orb.png" alt="orb"></a>
+					</li>
+				</ul>
+				<div id="shadow" class="shadow"></div>
+				<div id="nav-arrows" class="nav-arrows"></div>
+				<a href="">Next</a>
+				<a href="">Previous</a>
+			</div>
 		</div>
-	</div>
 
-	<script type="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-	<script type="jquery.slicebox.js"></script>	
-	<script>
+		<script type="js/jquery.slicebox.js"></script>	
+		<script>
 
-		$(function () {
-			var Page = (function (){
-				var $navArrows = $('#nav-arrows').hide(),
-				$shadow = $('shadow').hide(),
-				slicebox = $('sb-slider').slicebox{(
-					onReady : function () {
-						$navArrows.show();
-						shadow.show();
+			$(function () {
+				var Page = (function (){
+					var $navArrows = $('#nav-arrows').hide(),
+					$shadow = $('shadow').hide(),
+					slicebox = $('sb-slider').slicebox{(
+						onReady : function () {
+							$navArrows.show();
+							shadow.show();
+						},
+						orientation : 'r',
+						cubiodRandom ; true,
+						disperseFactor : 30
+						)},
+					init function() {
+						initEvents();
 					},
-					orientation : 'r',
-					cubiodRandom ; true,
-					disperseFactor : 30
-					)},
-				init function() {
-					initEvents();
-				},
-				initEvents = function(){
-					$navArrows.children(':first').on('click',
-						function(){
-							slicebox.Next();
+					initEvents = function(){
+						$navArrows.children(':first').on('click',
+							function(){
+								slicebox.Next();
+								return false;
+							});
+
+						$navArrows.children(':last').on('click', function(){
+							slicebox.Previous();
 							return false;
 						});
+					};
+					return (init : init);
+				})();
 
-					$navArrows.children(':last').on('click', function(){
-						slicebox.Previous();
-						return false;
-					});
-				};
-				return (init : init);
-			})();
-
-			Page.init();
-		});
+				Page.init();
+			});
 
 
 
-	</script>
+		</script>
 
-	<h3>3D animations</h3>
-	
-	<div class="animations">
-		<video width="320" height="240" controls>
-			<source src="3D/tronRun.mp4" type="video/mp4">
-			</video>
+		<h3>3D animations</h3>
+		
+		<div class="animations">
 			<video width="320" height="240" controls>
-			<source src="3D/dougwalking.mp4" type="video/mp4"> </video>
-			<video width="320" height="240" controls>
-			<source src="3D/popUp.mp4" type="video/mp4"></video>
-			<video width="320" height="240" controls>
-			<source src="3D/Rose.mp4" type="video/mp4"> </video>
-			<video width="320" height="240" controls>
-			<source src="3D/space.mp4" type="video/mp4"> </video>
-			<video width="320" height="240" controls>
-			<source src="3D/yard.mp4" type="video/mp4"> </video>
-			<video width="320" height="240" controls>
-			<source src="3D/float.mp4" type="video/mp4"></video>
-	</div>
+				<source src="3D/tronRun.mp4" type="video/mp4">
+				</video>
+				<video width="320" height="240" controls>
+				<source src="3D/dougwalking.mp4" type="video/mp4"> </video>
+				<video width="320" height="240" controls>
+				<source src="3D/popUp.mp4" type="video/mp4"></video>
+				<video width="320" height="240" controls>
+				<source src="3D/Rose.mp4" type="video/mp4"> </video>
+				<video width="320" height="240" controls>
+				<source src="3D/space.mp4" type="video/mp4"> </video>
+				<video width="320" height="240" controls>
+				<source src="3D/yard.mp4" type="video/mp4"> </video>
+				<video width="320" height="240" controls>
+				<source src="3D/float.mp4" type="video/mp4"></video>
+		</div>
 
-</body>
-</html>
+	</body>
+	</html>
 
 
-						
+							
