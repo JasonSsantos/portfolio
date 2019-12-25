@@ -11,19 +11,60 @@
 	</nav>
 
 		<h3>Art</h3>
-	<div class="gallery">
-		<img src="images/cross.jpg" alt="cross"  width="300" height="300">
-		<img src="images/flower.jpg" alt="flower"  width="300" height="300">
-		<img src="images/city.jpg" alt="city"  width="300" height="300">
-		<img src="images/space.jpg" alt="space"  width="300" height="300">
-		<img src="images/slime.jpg" alt="slime"  width="300" height="300">
-		<img src="images/heart.jpg" alt="heart"  width="300" height="300">
-		<img src="images/hallway.jpg" alt="hall" width="300" height="300">
-		<img src="images/orb.png" alt="orb" width="300" height="300">
-		<br>
+	<div class="container">
+	<div class="wrapper">
+		<ul id="sb-slider" class="sb-slider">
+			<li>
+				<a href=""><img src="images/flower.jpg" alt="flower"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/city.jpg" alt="city" ></a>
+			</li>
+			<li>
+				<a href=""><img src="images/space.jpg" alt="space"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/slime.jpg" alt="slime"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/heart.jpg" alt="heart"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/hallway.jpg" alt="hall"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/orb.png" alt="orb"></a>
+			</li>
+		</ul>
+		<div id="shadow" class="shadow"></div>
+		<div id="nav-arrows" class="nav-arrows"></div>
+		<a href="">Next</a>
+		<a href="">Previous</a>
+	</div>
+</div>
+
+<script type="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+	
+$(function () {
+	var Page = (function (){
+	var $navArrows = $('#nav-arrows').hide(),
+	$shadow = $('shadow').hide(),
+	slicebox = $('sb-slider').slicebox{(
+		onReady : function () {
+			$navArrows.show();
+			shadow.show();
+		}
+		)}
+})
+	});
+
+
+
+</script>
 
 		<h3>3D animations</h3>
-	</div>
+	
 	<div class="animations">
 		<video width="320" height="240" controls>
 			<source src="3D/tronRun.mp4" type="video/mp4">
@@ -46,3 +87,32 @@
 
 </body>
 </html>
+
+
+<div class="container">
+	<div class="wrapper">
+		<ul id="sb-slider" class="sb-slider">
+			<li>
+				<a href=""><img src="images/flower.jpg" alt="flower"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/city.jpg" alt="city" ></a>
+			</li>
+			<li>
+				<a href=""><img src="images/space.jpg" alt="space"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/slime.jpg" alt="slime"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/heart.jpg" alt="heart"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/hallway.jpg" alt="hall"></a>
+			</li>
+			<li>
+				<a href=""><img src="images/orb.png" alt="orb"></a>
+			</li>
+		</ul>
+	</div>
+</div>
